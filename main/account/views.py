@@ -12,10 +12,12 @@ def login(request):
 
             if user is not None:
                 auth_login(request, user)
-
+                
                 return redirect('/')
 
     return render(request, 'account/login.html')
+
+
 
 def signup(request):
     if request.method == 'POST':
@@ -26,11 +28,12 @@ def signup(request):
 
         if name and email and password1 and password2:
             user = User.objects.create_user(name, email, password1)
-            print('User created: ', user)
+
+            print('User created:', user)
 
             return redirect('/login/')
         else:
-            print("Something went wrong!")
+            print('Somethign went wrong')
     else:
         print('Just show the form!')
 
