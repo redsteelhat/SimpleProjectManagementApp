@@ -11,7 +11,7 @@ The Django-Tailwind Blog application is a simple projetc management platform dev
 Clone the project
 
 ```bash
-  git clonehttps://github.com/redsteelhat/SimpleProjectManagementApp.git
+  git clone https://github.com/redsteelhat/SimpleProjectManagementApp.git
 ```
 
 Proje dizinine gidin
